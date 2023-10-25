@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Pedido -->
+            <aside class="col-sm-4">
+                <h4 id="subtitulo">Relación de pedidos.</h4>
+                <!-- Productos seleccionados -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>$ -col;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Deshacer</button>
+                <button id="boton-cancelar" class="btn btn-primary">Cancelar</button>
+                <button id="boton-aprobar" class="btn btn-success">Aprobar</button>
+            
+                <!--<h2>Resumen de pedido</h2>
+                < !-- Productos seleccionados -- >
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                < !-- Precio total -- >
+                <p class="text-right">Total: <span id="total"></span>$ -col;</p>-->
+            </aside>
+        </div>
+    </div>
+        <script src="pedidos.js"></script>
+</body>
+
+</html>
